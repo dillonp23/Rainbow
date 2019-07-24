@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Rainbow-->
         <scene sceneID="mVJ-Vx-aN2">
             <objects>
-                <tableViewController id="hSQ-E6-y5m" sceneMemberID="viewController">
+                <tableViewController id="hSQ-E6-y5m" customClass="ColorsTableViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pjD-S9-uB8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B3H-21-VH8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ColorCell" id="B3H-21-VH8">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B3H-21-VH8" id="ldo-td-OZT">
@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="NhB-gw-eoG" kind="show" id="zCW-2h-a4L"/>
+                                    <segue destination="NhB-gw-eoG" kind="show" identifier="ShowColorSegue" id="zCW-2h-a4L"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -36,16 +36,16 @@
                             <outlet property="delegate" destination="hSQ-E6-y5m" id="U2d-GC-5GY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ltL-oS-ivN"/>
+                    <navigationItem key="navigationItem" title="Rainbow" id="ltL-oS-ivN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofj-ww-dyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Detail View Controller-->
         <scene sceneID="49C-cM-yNT">
             <objects>
-                <viewController id="NhB-gw-eoG" sceneMemberID="viewController">
+                <viewController id="NhB-gw-eoG" customClass="ColorDetailViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXT-iJ-sqz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,8 +61,8 @@
         <scene sceneID="DFI-wy-9Zo">
             <objects>
                 <navigationController id="v48-TL-WYE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VWq-fS-XBp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="VWq-fS-XBp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -13,6 +13,7 @@
 		9283680D22E7ECDB00E2FD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9283680B22E7ECDB00E2FD07 /* LaunchScreen.storyboard */; };
 		928F5A2222E7F26300A15773 /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F5A2122E7F26300A15773 /* ColorsTableViewController.swift */; };
 		928F5A2422E7F2A100A15773 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F5A2322E7F2A100A15773 /* ColorDetailViewController.swift */; };
+		928F5A2722E7F5F400A15773 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928F5A2622E7F5F400A15773 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9283680E22E7ECDB00E2FD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928F5A2122E7F26300A15773 /* ColorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
 		928F5A2322E7F2A100A15773 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
+		928F5A2622E7F5F400A15773 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9283680122E7ECDA00E2FD07 /* Rainbow */ = {
 			isa = PBXGroup;
 			children = (
+				928F5A2522E7F5A100A15773 /* Models */,
 				928F5A2022E7F17E00A15773 /* View Controllers */,
 				9283680222E7ECDA00E2FD07 /* AppDelegate.swift */,
 				9283680622E7ECDA00E2FD07 /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				928F5A2322E7F2A100A15773 /* ColorDetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		928F5A2522E7F5A100A15773 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				928F5A2622E7F5F400A15773 /* Color.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				928F5A2422E7F2A100A15773 /* ColorDetailViewController.swift in Sources */,
+				928F5A2722E7F5F400A15773 /* Color.swift in Sources */,
 				9283680322E7ECDA00E2FD07 /* AppDelegate.swift in Sources */,
 				928F5A2222E7F26300A15773 /* ColorsTableViewController.swift in Sources */,
 			);
